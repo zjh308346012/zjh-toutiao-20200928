@@ -1,6 +1,13 @@
 <template>
-<div>
-    <h1>编辑资料</h1>
+<div class="container">
+    <van-nav-bar
+  title="编辑资料"
+  left-text=""
+  right-text="保存"
+  left-arrow
+  @click-left="$router.back()"
+
+/>
 </div>
 </template>
 

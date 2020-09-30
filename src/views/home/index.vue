@@ -1,6 +1,8 @@
 <template>
 <div>
-    <h1>主页</h1>
+  <div class="container">
+      主页
+  </div>
 </div>
 </template>
 
