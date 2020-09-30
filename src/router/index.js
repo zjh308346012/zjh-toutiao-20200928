@@ -39,40 +39,49 @@ const routes = [
     },
     {
       path: '/question',
+      name: 'Question',
       component: Question // 问答组件
     },
     {
       path: '/video',
+      name: 'Video',
       component: Video // 视频组件
     },
     {
       path: '/user',
-      comment: User // 用户组件
+      name: 'User',
+      component: User // 用户组件
     }
     ]
   },
   {
     path: '/login',
+    name: 'Login',
     component: Login // 登录路由
   },
   {
     path: '/user/chat',
+    name: 'Chat',
     component: chat // 小智同学路由
   },
   {
     path: '/user/profile',
+    name: 'Profile',
     component: profile // 编辑资料路由
   },
   {
     path: '/search',
+    name: 'Search',
     component: search // 搜索路由
   },
   {
     path: '/searchResult',
+    name: 'SearchResult',
     component: searchResult // 搜索结果路由
   },
   {
     path: '/article',
+    name: 'Article',
     component: article // 文章详情路由
   }
 
