@@ -4,7 +4,7 @@
     <van-tabs color="#3296fa">
         <!-- 内部需要放置子 标签  title值为当前显示的内容-->
          <!-- van-tab是vant组件的样式  -->
-  <van-tab v-for="index in 8" :title="'标签 ' + index" :key="index">
+  <van-tab v-for="item in channels" :title="item.name " :key="item.id">
 
     <!-- <div class="scroll-wrapper">
       <van-cell-group>
@@ -27,9 +27,25 @@
 
 <script>
 import ArticleList from './components/article-list'
+import { getMyChannels } from '@/api/channels.js'
 export default {
   components: {
     ArticleList
+  },
+  data () {
+    return {
+      channels: []
+    }
+  },
+  methods: {
+    async  getMyChannels () {
+      const data = await getMyChannels() // 接收返回的数据结果
+      this.channels = data.channels
+      console.log(this.channels)
+    }
+  },
+  created () {
+    this.getMyChannels()
   }
 }
 </script>
