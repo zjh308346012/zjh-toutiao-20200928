@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import Vant from 'vant' // 引入vant插件
-import 'vant/lib/index.css' // 引入vant样式
+import 'vant/lib/index.less' // 引入vant样式
 import 'amfe-flexible' // 引入根据当前屏幕的变化而变化的font-size插件
 import '@/styles/index.less' // 引入全局样式以及vant的覆盖样式
 
